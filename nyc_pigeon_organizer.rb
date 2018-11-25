@@ -1,3 +1,4 @@
+require "pry"
 def nyc_pigeon_organizer(data)
   # write your code here!
   
@@ -6,7 +7,8 @@ def nyc_pigeon_organizer(data)
 
   data.each do |value, datas|
     datas.each do |language, type|
-      if new_hash[language]
+      if pigeon_list[language]
+        binding.pry
         pigeon_list[language][:style] << value
       else 
         pigeon_list[language] = type
