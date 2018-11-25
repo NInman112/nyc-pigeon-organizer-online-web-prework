@@ -8,6 +8,7 @@ def nyc_pigeon_organizer(data)
       name.each do |n|
         pigeon_list[n] ||= {}
         pigeon_list[n][value] || = []
+        pigeon_list[n][value].push("#{color}")
       end
     end
   end
