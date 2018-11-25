@@ -7,8 +7,6 @@ def nyc_pigeon_organizer(data)
     info.each do |color, name|
       if pigeon_list[color]
       pigeon_list[] = name.flatten
-    else
-      pigeon_list[color] = name
     end
     end
   end
