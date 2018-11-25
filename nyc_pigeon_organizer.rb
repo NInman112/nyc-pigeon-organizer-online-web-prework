@@ -9,7 +9,6 @@ def nyc_pigeon_organizer(data)
       pigeon_list[name] = name.flatten
     else
       pigeon_list[color] = name
-      pigeon_list[color][:name] = [value]
     end
     end
   end
