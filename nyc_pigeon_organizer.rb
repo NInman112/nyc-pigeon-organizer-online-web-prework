@@ -4,15 +4,15 @@ def nyc_pigeon_organizer(data)
   pigeon_list = {}
   
 
-  data.each do |value, data|
+  data.each do |value, datas|
     datas.each do |language, type|
       if new_hash[language]
-        new_hash[language][:style] << value
+        pigeon_list[language][:style] << value
       else 
-        new_hash[language] = type
-        new_hash[language][:style] = [value]
+        pigeon_list[language] = type
+        pigeon_list[language][:style] = [value]
       end
     end
   end
-  new_hash
+  pigeon_list
 end
