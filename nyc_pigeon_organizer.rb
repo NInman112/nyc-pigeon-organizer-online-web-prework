@@ -6,6 +6,7 @@ def nyc_pigeon_organizer(data)
   data.each do |value, info|
     info.each do |color, name|
       name.each do |n|
+        pigeon_list[n] || = {}
     end
   end
   end
